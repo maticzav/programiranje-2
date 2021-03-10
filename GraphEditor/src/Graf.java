@@ -39,7 +39,7 @@ public class Graf {
 	}
 	
 	public void dodajPovezavo(Tocka v, Tocka u) {
-		if (v == u ) return;
+		if (v == u) return;
 		v.sosedi.add(u);
 		u.sosedi.add(v);
 	}
@@ -103,23 +103,6 @@ public class Graf {
 			System.out.println();
 		}
 		
-	}
-	
-	public void razporedi(double x, double y, double r) {
-		int n = tocke.size();
-		int i = 0;
-		for (Tocka v: this.tocke.values()) {
-			v.x = x + r * Math.cos(2 * i * Math.PI / n);
-			v.y = y + r * Math.sin(2 * i * Math.PI / n);
-			++i;
-		}
-		
-	}
-
-}
-	
-	public void dodajPovezavo(Tocka a, Tocka b) {
-//		self.tocke = 
 	}
 
 	public void razporedi(double x, double y, double r) {
