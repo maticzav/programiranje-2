@@ -9,6 +9,7 @@ public class Tocka {
 	
 	public Tocka (String ime) {
 		this.ime = ime;
+		this.sosedi = new HashSet<Tocka>();
 		this.x = 0;
 		this.y = 0;
 	}

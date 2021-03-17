@@ -110,8 +110,8 @@ public class Graf {
 		int i = 0;
 
 		for (Tocka tocka : this.tocke.values()) {
-			tocka.x = x + r * Math.cos(i * Math.PI / n);
-			tocka.y = y + r * Math.sin(i * Math.PI / n);
+			tocka.x = x + r * Math.cos(i * 2 * Math.PI / n);
+			tocka.y = y + r * Math.sin(i * 2 * Math.PI / n);
 			i += 1;
 		}
 	}
